@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+
+  <style>
+  	{
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    
+</style>
+<script>
+  var pride = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife."
+  var gatsby = "In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since."
+  var sherlock = "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name."
+  function myFunction()
+  {
+    var selection = document.getElementById("books").value;
+    if(selection=="Pride and Prejudice"){
+      document.getElementById("gutenberg").innerHTML = pride;
+    }
+    else if(selection=="The Great Gatsby"){
+      document.getElementById("gutenberg").innerHTML = gatsby;
+    }
+    else if(selection=="Adventures of Sherlock Holmes"){
+      document.getElementById("gutenberg").innerHTML = sherlock;
+    }
+  }
+</script>
+  <body>
+    <form>
+      <fieldset>
+
+<!-- HEADER -->
+        <legend><b><h1>READEFINE</b></h1></legend>
+   <div class="row">
+        <div class="column">
+            <h3>A Resource for Students</h3>
+			<p>On this site, you can:<br>
+			<ul>
+			<li><b>READ: </b>Choose a random or selected excerpt from Project Gutenberg to read.</li>
+			<li><b>DEFINE:</b>Find definitions for any word in the text. </li>
+			<li><b>LEARN:</b>Try out our new ADVANCED service. Get expert tutoring online. Pay through Cryptocurrency. </li>
+			<li>Click Here for Tutorial</li>
+			</ul>
+			</p>
+        </div>
+        <div class="column">
+            <p><img src="homepageimage.jpg" alt="Book and Floral Image from Unsplash by Tatiana @sunnysnapshots" width="400" height="400"></p>
+        </div>
+       
+      </fieldset>
+    </form>
+<br>
+
+<!-- WEBSCRAPER FOR PROJECT GUTENBERG -->
+  <div>
+    <form>
+      <fieldset>
+        <legend><h2>Read an Excerpt from Project Gutenberg</h2></legend>
+        <br>
+        <textarea id="gutenberg" name="gutenberg" rows="4" cols="50">
+        </textarea>
+<br>  
+
+
+<label for="books">Choose a chapter:</label>
+
+<select name="books" id="books" onchange = "myFunction()">
+<option value="Pride and Prejudice">Pride and Prejudice</option>
+<option value="The Great Gatsby">The Great Gatsby</option>
+<option value="Adventures of Sherlock Holmes">Adventures of Sherlock Holmes</option>
+</select>
+
+
+      </fieldset>
+    </form>
+  </div>
+
+
+<!-- CREDITS AND INFO -->
+ <form>
+      <fieldset>
+   <legend><b><h2>Thank You</b></h2></legend>
+   <div class="row">
+        
+            <h3>Questions?</h3>
+			<p>Reach me at yangjaq@oregonstate.edu<br>
+			<h3>Find Out More:</h3>
+			<ul>
+			<li>Project Gutenberg (gutenberg.org) is the world's largest library of open domain, copyright-free texts.</li>
+			<li>Webster's Dictionary (websters1913.com) is a comprehensive dictionary for writers and wordsmiths.</li>
+
+			</ul>
+			</p>
+    
+      
+       
+      </fieldset>
+    </form>
