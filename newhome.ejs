@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>READEFINE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins:300" rel="stylesheet">
+    
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script> 
+        var pride = "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife. However little known the feelings or views of such a man may be on his first entering a neighbourhood, this truth is so well fixed in the minds of the surrounding families, that he is considered the rightful property of some one or other of their daughters."
+
+        var gatsby = "In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since. “Whenever you feel like criticizing anyone,” he told me, “just remember that all the people in this world haven’t had the advantages that you’ve had.”"
+
+        var sherlock = "To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name. I have seldom heard him mention her under any other name. In his eyes she eclipses and predominates the whole of her sex. It was not that he felt any emotion akin to love for Irene Adler. All emotions, and that one particularly, were abhorrent to his cold, precise but admirably balanced mind. "
+
+        var frank = "To Mrs. Saville, England. St. Petersburgh, Dec. 11th, 17—.You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings. I arrived here yesterday, and my first task is to assure my dear sister of my welfare and increasing confidence in the success of my undertaking."
+
+        var alice = "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, “and what is the use of a book,” thought Alice “without pictures or conversations?\"So she was considering in her own mind (as well as she could, for the hot day made her feel very sleepy and stupid), whether the pleasure of making a daisy-chain would be worth the trouble of getting up and picking the daisies, when suddenly a White Rabbit with pink eyes ran close by her."
+
+        var moby = "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation."
+
+        var tale = "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair, we had everything before us, we had nothing before us, we were all going direct to Heaven, we were all going direct the other way—in short, the period was so far like the present period, that some of its noisiest authorities insisted on its being received, for good or for evil, in the superlative degree of comparison only."
+
+        var dorian = "The artist is the creator of beautiful things. To reveal art and conceal the artist is art’s aim. The critic is he who can translate into another manner or a new material his impression of beautiful things. The highest as the lowest form of criticism is a mode of autobiography. Those who find ugly meanings in beautiful things are corrupt without being charming. This is a fault. Those who find beautiful meanings in beautiful things are the cultivated. For these there is hope. They are the elect to whom beautiful things mean only beauty. There is no such thing as a moral or an immoral book. Books are well written, or badly written. That is all."
+
+        var war = "“Well, Prince, so Genoa and Lucca are now just family estates of the Buonapartes. But I warn you, if you don’t tell me that this means war, if you still try to defend the infamies and horrors perpetrated by that Antichrist—I really believe he is Antichrist—I will have nothing more to do with you and you are no longer my friend, no longer my ‘faithful slave,’ as you call yourself! But how do you do? I see I have frightened you—sit down and tell me all the news.”"
+
+        var dracula = "3 May. Bistritz.—Left Munich at 8:35 P. M., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late. Buda-Pesth seems a wonderful place, from the glimpse which I got of it from the train and the little I could walk through the streets. I feared to go very far from the station, as we had arrived late and would start as near the correct time as possible. The impression I had was that we were leaving the West and entering the East; the most western of splendid bridges over the Danube, which is here of noble width and depth, took us among the traditions of Turkish rule."
+
+  /*this fills the text area*/
+  function myFunction()
+  {
+    var selection = document.getElementById("books").value;
+    if(selection=="Pride and Prejudice"){
+      document.getElementById("gutenberg").innerHTML = pride;
+    }
+    else if(selection=="Alice's Adventures in Wonderland"){
+      document.getElementById("gutenberg").innerHTML = alice;
+    }
+    else if(selection=="The Great Gatsby"){
+      document.getElementById("gutenberg").innerHTML = gatsby;
+    }
+    else if(selection=="Adventures of Sherlock Holmes"){
+      document.getElementById("gutenberg").innerHTML = sherlock;
+    }
+    else if(selection=="Frankenstein"){
+      document.getElementById("gutenberg").innerHTML = frank;
+    }
+    else if(selection=="Moby Dick"){
+      document.getElementById("gutenberg").innerHTML = moby;
+    }
+    else if(selection=="A Tale of Two Cities"){
+      document.getElementById("gutenberg").innerHTML = tale;
+    }
+    else if(selection=="The Picture of Dorian Gray"){
+      document.getElementById("gutenberg").innerHTML = dorian;
+    }
+    else if(selection=="War and Peace"){
+      document.getElementById("gutenberg").innerHTML = war;
+    }
+    else if(selection=="Dracula"){
+      document.getElementById("gutenberg").innerHTML = dracula;
+    }
+  }
+
+var stopCharacters = [' ', '.', ',']
+$(function() {
+    $('textarea').on('click', function() {
+        var text = $(this).html();
+        var start = $(this)[0].selectionStart;
+        var end = $(this)[0].selectionEnd;
+        while (start > 0) {
+            if (stopCharacters.indexOf(text[start]) == -1) {
+                --start;
+            } else {
+                break;
+            }                        
+        };
+        if(start != 0)
+        {
+          ++start;
+        }
+        while (end < text.length) {
+            if (stopCharacters.indexOf(text[end]) == -1) {
+                ++end;
+            } else {
+                break;
+            }
+        }
+        var currentWord = text.substr(start, end - start);
+        /*alert(currentWord);*/
+        $.ajax({
+        url: '/dictionary',
+        type: 'POST',
+        data: currentWord, 
+        success: function(response){
+        
+      alert("Data: " + data + "\nStatus: " + status);
+        }
+       });
+    });
+});
+
+
+function eraseText() {
+    document.getElementById("gutenberg").innerHTML = "";
+}
+
+</script>
+
+    
+  </head>
+  <body>
+    
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+          <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+        </svg>
+        
+        <span class="fs-4">READEFINE</span>
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">READEFINE</h1>
+        <p class="col-md-8 fs-4"><h3>A Resource for Students</h3>
+      On this site, you can:<br>
+      <ul>
+      <li><b>READ: </b>Choose a random or selected excerpt from Project Gutenberg to read.</li>
+      <li><b>DEFINE: </b>Find definitions for any word in the text. </li>
+      <li><b>LEARN: </b>Try out our new ADVANCED service. Get expert tutoring online. Pay through Cryptocurrency. </li>
+      </ul>
+      </p>
+        <button class="btn btn-primary btn-lg" type="button">Click Here for Tutorial</button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-white bg-dark rounded-3">
+          <fieldset>
+          <h2>Read an Excerpt from Project Gutenberg</h2>
+          <textarea id="gutenberg" name="gutenberg" rows="7" cols="65">
+        </textarea>
+        <br>  
+
+
+        <label for="books">Choose a chapter:</label>
+
+        <select name="books" id="books" onchange = "myFunction()">
+        <option value="Pride and Prejudice">Pride and Prejudice</option>
+        <option value="Alice's Adventures in Wonderland">Alice's Adventures in Wonderland</option>
+        <option value="Adventures of Sherlock Holmes">Adventures of Sherlock Holmes</option>
+        <option value="Frankenstein">Frankenstein</option>
+        <option value="Moby Dick">Moby Dick</option>
+        <option value="A Tale of Two Cities">A Tale of Two Cities</option>
+        <option value="The Picture of Dorian Gray">The Picture of Dorian Gray</option>
+        <option value="War and Peace">War and Peace</option>
+        <option value="The Great Gatsby">The Great Gatsby</option>
+        <option value="Dracula">Dracula</option>
+
+        </select>
+
+
+              </fieldset>
+            </form>
+          <button class="btn btn-outline-light" type="button" value="Clear" onclick="javascript:eraseText();">Clear All</button>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-light border rounded-3">
+          <h2>Dictionary</h2>
+        </div>
+      </div>
+
+    <div class="p-5 mb-4 bg-light rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Thank You</h1>
+        <ul>
+          <li>Project Gutenberg (gutenberg.org) is the world's largest library of open domain, copyright-free texts.</li>
+          <li>Merriam Webster (https://dictionaryapi.com/) is a comprehensive dictionary for writers and wordsmiths.</li>
+  
+          </ul>
+          </p>
+            <a href="mailto:yangjaq@oregonstate.edu" target="_blank" button class="btn btn-outline-secondary" type="button">Send a Message</button></a>
+          </div>
+        </div>
+      </div>
+
+
+
+    <footer class="pt-3 mt-4 text-muted border-top">
+      &copy; 2021
+    </footer>
+  </div>
+</main>
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
