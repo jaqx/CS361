@@ -1,0 +1,32 @@
+
+   body {
+    font-family: 'Lora', serif;
+    Font-Family: 'Poppins', Sans-Serif;
+    Font-Size: 18px;
+   }
+   
+   h1 {
+    Font-Family: 'Abril Fatface', Cursive;
+    Font-Size: 48px;
+   }
+
+   h2 {
+    Font-Family: 'Abril Fatface', Cursive;
+    Font-Size: 30px;
+   }
+
+   h3, h4, h5, h6 {
+    Font-Family: 'Abril Fatface', Cursive;
+    Font-Size: 25px;
+   }
+
+
+   #title{
+     
+      color:white;
+    }
+
+    .pt-3{
+      text-align: center;
+      color: white;
+    }
